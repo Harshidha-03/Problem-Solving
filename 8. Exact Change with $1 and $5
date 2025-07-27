@@ -1,0 +1,63 @@
+//The longer code
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("$1 notes of available: ");
+        int note1 = sc.nextInt();
+        
+        System.out.print("$5 notes of available: ");
+        int note5 = sc.nextInt();
+        
+        System.out.print("Purchase Amount: ");
+        int purchase = sc.nextInt();
+        
+        int total = note1 + (note5*5);
+        if (total < purchase){
+            System.out.println("-1");
+            return;
+        }
+        
+        int possible_note5 = Math.min(note5, purchase / 5); 
+        int rem = purchase - possible_note5*5;
+        
+        if (rem <= note1){
+            System.out.println("$1 notes needed: " + rem);
+            System.out.println("$5 notes needed: " + possible_note5);
+        } else 
+            System.out.println("-1");
+    }
+}
+
+//The shoter code - both by me :)
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("$1 notes of available: ");
+        int note1 = sc.nextInt();
+        
+        System.out.print("$5 notes of available: ");
+        int note5 = sc.nextInt();
+        
+        System.out.print("Purchase Amount: ");
+        int purchase = sc.nextInt();
+        
+        int possible_note5 = Math.min(note5, purchase/5);
+        int rem = purchase - (possible_note5*5);
+        int total = note1 + (note5*5);
+        
+        if (total < purchase){
+            System.out.println("-1");
+        } else if (rem <= note1){
+            System.out.println("$1 notes needed: " + rem);
+            System.out.println("$5 notes needed: " + possible_note5);
+        } else 
+            System.out.println("-1");
+    }
+}
