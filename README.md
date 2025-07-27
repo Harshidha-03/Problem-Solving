@@ -29,7 +29,32 @@ Sample Input and Output
 Note: Only one of the three values can be 7.
 <img width="371" height="197" alt="image" src="https://github.com/user-attachments/assets/d686722a-ee33-4a0a-90d0-75edc0a983b5" />
 
-7. 
+7. The Metro Bank provides various types of loans such as car loans, business loans and house loans to its account holders, i.e., customers.
 
+Implement a program to determine the eligible loan amount and the EMI that the bank can provide to its customers based on their salary and the loan type they expect to avail.
 
+The values required for determining the eligible loan amount and the EMI are:
+  account number of the customer
+  account balance of the customer
+  salary of the customer
+  loan type 
+  expected loan amount
+  expected no. of EMIs
+The following validations should be performed:
+  The account number should be of 4 digits and its first digit should be 1
+  The customer should have a minimum balance of $1000 in the account
+Display appropriate error messages if the validations fail.
 
+If the validations pass, determine whether the bank would provide the loan or not. 
+
+The bank would provide the loan, only if the loan amount and the number of EMIs expected by the customer is less than or equal to the loan amount and the number of EMIs decided by the bank respectively. The bank decides the eligible loan amount and the number of EMIs based on the below table.
+
+<img width="538" height="182" alt="image" src="https://github.com/user-attachments/assets/fd67b67a-8880-46bc-b371-c67cf32f16e6" />
+
+Display the account number, eligible and requested loan amount and the number of EMIs if the bank provides the loan.
+
+Display an appropriate message if the bank does not provide the loan.
+
+<img width="529" height="176" alt="image" src="https://github.com/user-attachments/assets/9a98568b-b490-4cfb-9ea1-6ff47c4150fd" />
+
+8. 
