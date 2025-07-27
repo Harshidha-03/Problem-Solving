@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    
+    System.out.println("Welcome to the food corner! \nTo get the final bill for your order, follow the below three steps!");
+    System.out.println("STEP1 - Please enter the type of food! \n'V' for Vegetarian meals combo and 'N for Non-Vegetarian meals combo");
+    System.out.print("1. Type of Food: ");
+    String food = sc.nextLine().toUpperCase();
+    
+    System.out.println("STEP2 - Please enter a valid quantity of food!");
+    System.out.print("2. Quantity of Food: ");
+    int quantity = sc.nextInt();
+    
+    System.out.println("STEP3 - Please enter the distance from the restaurant to the delivery point in kms!");
+    System.out.print("3. Distance in kms: ");
+    int distance = sc.nextInt();
+    
+    int billAmount = 0;
+    
+    if (!(food.equals("N") || food.equals("V")) || quantity <= 0 || distance <= 0){
+        System.out.println("Your Bill Amount = -1");
+    }else if (food.equals("V")){
+        billAmount += quantity * 12;
+   }else if (food.equals("N")){
+        billAmount += quantity * 15;
+   }
+   
+   if (distance <= 3){
+      billAmount = billAmount; 
+   }else if (distance <= 6){
+       billAmount += (distance - 3) * 1;
+   }else {
+       billAmount += (3*1) + ((distance -6 )*2) ;
+   }
+   System.out.println("Your Bill Amount = " + billAmount); 
+       
+    }
+}
