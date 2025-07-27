@@ -19,22 +19,20 @@ public class Main {
     
     int billAmount = 0;
     
-    if (!(food.equals("N") || food.equals("V")) || quantity <= 0 || distance <= 0){
+    if (!(food.equals("N") || food.equals("V")) || quantity <= 0 || distance <= 0)
         System.out.println("Your Bill Amount = -1");
-    }else if (food.equals("V")){
+    else if (food.equals("V"))
         billAmount += quantity * 12;
-   }else if (food.equals("N")){
+    else if (food.equals("N"))
         billAmount += quantity * 15;
-   }
    
-   if (distance <= 3){
+    if (distance <= 3)
       billAmount = billAmount; 
-   }else if (distance <= 6){
+    else if (distance <= 6)
        billAmount += (distance - 3) * 1;
-   }else {
+    else 
        billAmount += (3*1) + ((distance -6 )*2) ;
-   }
-   System.out.println("Your Bill Amount = " + billAmount); 
+    System.out.println("Your Bill Amount = " + billAmount); 
        
     }
 }
