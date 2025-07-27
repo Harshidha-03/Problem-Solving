@@ -25,7 +25,11 @@ Sample Input and Output
 
 <img width="662" height="128" alt="image" src="https://github.com/user-attachments/assets/285138ca-769a-47b1-aa72-57f64a4184b0" />
 
-6. 
+6. Implement a program to calculate the product of three positive integer values. However, if one of the integers is 7, consider only the values to the right of 7 for calculation. If 7 is the last integer, then display -1.
+Note: Only one of the three values can be 7.
+<img width="371" height="197" alt="image" src="https://github.com/user-attachments/assets/d686722a-ee33-4a0a-90d0-75edc0a983b5" />
+
+7. 
 
 
 
