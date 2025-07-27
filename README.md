@@ -22,6 +22,7 @@ Quantity ordered should be minimum 1.
 If any of the input is invalid, the bill amount should be displayed as -1.
 
 Sample Input and Output
+
 <img width="662" height="128" alt="image" src="https://github.com/user-attachments/assets/285138ca-769a-47b1-aa72-57f64a4184b0" />
 
 6. 
