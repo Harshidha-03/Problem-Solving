@@ -57,4 +57,11 @@ Display an appropriate message if the bank does not provide the loan.
 
 <img width="529" height="176" alt="image" src="https://github.com/user-attachments/assets/9a98568b-b490-4cfb-9ea1-6ff47c4150fd" />
 
-8. 
+8. You have x number of $5 notes and y number of $1 notes. You want to purchase an item for amount z. The shopkeeper wants you to provide exact change. You want to pay using a minimum number of notes. How many $5 notes and $1 notes will you use?
+
+Implement a program to find out how many $5 notes and $1 notes will be used. If an exact change is not possible, then display -1. 
+
+<img width="439" height="196" alt="image" src="https://github.com/user-attachments/assets/9fe9ed24-1a11-44d9-b6da-989826327f86" />
+
+9. 
+
