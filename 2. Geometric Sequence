@@ -13,3 +13,25 @@ public class Main{
          }
     }
 }
+// this one includes the comma even after the end number. So the below code is the correct one.
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter an input: ");
+        int input = sc.nextInt();
+        int geoSeq = 1;
+        int count = 0;
+
+        while (count <= input) {
+            if (count > 0) {
+                System.out.print(", ");
+            }
+            System.out.print(geoSeq);
+            geoSeq *= 2;
+            count++;
+        }
+    }
+}
