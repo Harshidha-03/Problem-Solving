@@ -1,0 +1,156 @@
+// This is the first code written - so it's very lenghty.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter your Account Number: ");
+        int account_number = sc.nextInt();
+        String account_number_length = String.valueOf(account_number); 
+
+        while (account_number_length.length() != 4 || account_number/1000 != 1) { 
+            System.out.println("Invalid! Account number must be 4 digits and should start with 1");
+            System.out.print("Enter your Account Number: ");
+            account_number = sc.nextInt(); 
+            account_number_length = String.valueOf(account_number); 
+        }
+        
+        System.out.print("Enter your Account Balance: ₹");
+        int account_balance = sc.nextInt();
+        
+        if (account_balance < 1000){
+            System.out.println("Sorry! The customer should have a minimum balance of ₹1000 \nYou are not eligible for the loan :( ");
+            return;
+        }
+        
+        System.out.print("Enter your Salary: ₹");
+        int salary = sc.nextInt();
+        
+        System.out.print("Enter the Loan Type (Car/House/Business): ");
+        String loan_type = sc.next().toLowerCase();
+        
+        while (!(loan_type.equals("car") || loan_type.equals("house") || loan_type.equals("business"))){
+            System.out.println("Please Enter a Valid Loan Type!");
+            System.out.print("Enter the Loan Type (Car/House/Business): ");
+            loan_type = sc.next().toLowerCase();
+        }    
+            
+        System.out.print("Enter your Expected Loan Amount: ₹");
+        int loan_amount = sc.nextInt();
+        
+        System.out.print("Enter your Expected No of EMIs: ");
+        int emi = sc.nextInt();
+        
+        switch(loan_type){
+        case "car":
+            if (salary > 25000 && loan_amount <= 500000 && emi <= 30){
+                System.out.println("Congratulations! You are eligible for the loan!"); 
+                System.out.println("Account Number: " + account_number);
+                System.out.println("The Eligible Loan Amount for your Loan type is ₹500000.");
+                System.out.println("The Requested Loan Amount is ₹" + loan_amount);
+                System.out.println("The No of EMIs provided by the bank is 36");
+            } else
+                System.out.println("Sorry! You are not eligible for the loan :( ");
+            break;
+        
+        case "house":
+            if (salary > 50000 && loan_amount <= 6000000 && emi <= 60){
+                System.out.println("Congratulations! You are eligible for the loan!"); 
+                System.out.println("Account Number: " + account_number);
+                System.out.println("The Eligible Loan Amount for your Loan type is ₹6000000.");
+                System.out.println("The Requested Loan Amount is ₹" + loan_amount);
+                System.out.println("The No of EMIs provided by the bank is 60");
+            } else
+            System.out.println("Sorry! You are not eligible for the loan :( ");
+            break;
+        
+        case "business":
+            if (salary > 75000 && loan_amount <= 7500000 && emi <= 84){
+                System.out.println("Congratulations! You are eligible for the loan!"); 
+                System.out.println("Account Number: " + account_number);
+                System.out.println("The Eligible Loan Amount for your Loan type is ₹7500000.");
+                System.out.println("The Requested Loan Amount is ₹" + loan_amount);
+                System.out.println("The No of EMIs provided by the bank is 84");
+            } else
+                System.out.println("Sorry! You are not eligible for the loan :( ");
+            break;
+        }
+    }
+}
+
+// The code is altered and shortened with the help of chatgpt and google.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter your Account Number: ");
+        int account_number = sc.nextInt();
+        String account_number_length = String.valueOf(account_number); 
+
+        while (account_number_length.length() != 4 || account_number/1000 != 1) { 
+            System.out.println("Invalid! Account number must be 4 digits and should start with 1");
+            System.out.print("Enter your Account Number: ");
+            account_number = sc.nextInt(); 
+            account_number_length = String.valueOf(account_number); 
+        }
+        
+        System.out.print("Enter your Account Balance: ₹");
+        int account_balance = sc.nextInt();
+        
+        if (account_balance < 1000){
+            System.out.println("Sorry! The customer should have a minimum balance of ₹1000 \nYou are not eligible for the loan :( ");
+            return;
+        }
+        
+        System.out.print("Enter your Salary: ₹");
+        int salary = sc.nextInt();
+        
+        System.out.print("Enter the Loan Type (Car/House/Business): ");
+        String loan_type = sc.next().toLowerCase();
+        
+        while (!(loan_type.equals("car") || loan_type.equals("house") || loan_type.equals("business"))){
+            System.out.println("Please Enter a Valid Loan Type!");
+            System.out.print("Enter the Loan Type (Car/House/Business): ");
+            loan_type = sc.next().toLowerCase();
+        }    
+            
+        System.out.print("Enter your Expected Loan Amount: ₹");
+        int loan_amount = sc.nextInt();
+        
+        System.out.print("Enter your Expected No of EMIs: ");
+        int emi = sc.nextInt();
+        
+        int minimum_salary = 0;
+        int eligible_amount = 0;
+        int max_emi = 0;
+        switch(loan_type){
+        case "car":
+            minimum_salary = 25000;
+            eligible_amount = 500000;
+            max_emi = 36;
+            break;
+        
+        case "house":
+            minimum_salary = 50000;
+            eligible_amount = 6000000;
+            max_emi = 60;
+            break;
+        
+        case "business":
+            minimum_salary = 75000;
+            eligible_amount = 7500000;
+            max_emi = 84;
+            break;
+        }
+        
+        if (salary > minimum_salary && loan_amount <= eligible_amount && emi <= max_emi){
+            System.out.println("Congratulations! You are eligible for the loan!");
+            System.out.println("Account Number: " + account_number);
+            System.out.println("The Eligible Loan Amount for your Loan type is ₹" + eligible_amount);
+            System.out.println("The Requested Loan Amount is ₹" + loan_amount);
+            System.out.println("The No of EMIs provided by the bank is " + max_emi);
+            } else
+                System.out.println("Sorry! You are not eligible for the loan :( ");
+    }
+}
