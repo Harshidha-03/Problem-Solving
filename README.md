@@ -40,7 +40,7 @@ The values required for determining the eligible loan amount and the EMI are:
 - loan type 
 - expected loan amount
 - expected no. of EMIs
-1. The following validations should be performed:
+- The following validations should be performed:
 - The account number should be of 4 digits and its first digit should be 1
 - The customer should have a minimum balance of $1000 in the account
 Display appropriate error messages if the validations fail.
