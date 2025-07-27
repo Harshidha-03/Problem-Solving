@@ -34,15 +34,15 @@ Note: Only one of the three values can be 7.
 Implement a program to determine the eligible loan amount and the EMI that the bank can provide to its customers based on their salary and the loan type they expect to avail.
 
 The values required for determining the eligible loan amount and the EMI are:
-- account number of the customer
-- account balance of the customer
-- salary of the customer
-- loan type 
-- expected loan amount
-- expected no. of EMIs
+  - account number of the customer
+  - account balance of the customer
+  - salary of the customer
+  - loan type 
+  - expected loan amount
+  - expected no. of EMIs
 - The following validations should be performed:
-- The account number should be of 4 digits and its first digit should be 1
-- The customer should have a minimum balance of $1000 in the account
+  - The account number should be of 4 digits and its first digit should be 1
+  - The customer should have a minimum balance of $1000 in the account
 Display appropriate error messages if the validations fail.
 
 If the validations pass, determine whether the bank would provide the loan or not. 
