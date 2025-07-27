@@ -63,5 +63,15 @@ Implement a program to find out how many $5 notes and $1 notes will be used. If 
 
 <img width="439" height="196" alt="image" src="https://github.com/user-attachments/assets/9fe9ed24-1a11-44d9-b6da-989826327f86" />
 
-9. 
+9. Implement a program to generate and display the next date of a given date.
+
+The date will be provided as day, month and year as shown in the below table.
+
+The output should be displayed in the format: day-month-year.
+
+Assumption: The input will always be a valid date.
+
+<img width="330" height="117" alt="pfwjop156" src="https://github.com/user-attachments/assets/12de0262-d854-4d6c-a198-cbb6d280e263" />
+
+10. 
 
