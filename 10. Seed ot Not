@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter X: ");
+        int x = sc.nextInt();
+        System.out.print("Enter Y: ");
+        int y = sc.nextInt();
+        
+        int org = x;
+        int seed = x;
+        
+        while(org > 0){
+            int digit = org%10;
+            seed *= digit;
+            org /= 10;
+        }
+        
+        if(seed == y){
+            System.out.println("The given input " + x + " is a seed of the given input " + y);
+        } else {
+            System.out.println("The given input " + x + "is not a seed of the given input " + y);
+        }
+    }
+}
