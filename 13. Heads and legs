@@ -1,0 +1,91 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the Number of Heads: ");
+        int heads = sc.nextInt();
+        System.out.print("Enter the Number of Legs: ");
+        int legs = sc.nextInt();
+        
+        int rabbits = legs/2 - heads;
+        int chickens = heads - rabbits;
+        
+        if (legs%2 == 0 && chickens>=0){
+           System.out.println("Number of Chickens: " + chickens); 
+           System.out.println("Number of Rabbits: " + rabbits);
+        }else {
+            System.out.println("The Number of CHickens and Rabbits can not be found");
+        }
+    }
+}
+
+//original code by me
+int rabbits = Math.abs((legs / 2) - heads); //for line 11
+
+//code by chatgpt
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the Number of Heads: ");
+        int heads = sc.nextInt();
+
+        System.out.print("Enter the Number of Legs: ");
+        int legs = sc.nextInt();
+
+        if (legs % 2 != 0) {
+            System.out.println("Invalid input: Legs must be even.");
+            return;
+        }
+
+        int chickens = (4 * heads - legs) / 2;
+        int rabbits = heads - chickens;
+
+        if (chickens < 0 || rabbits < 0) {
+            System.out.println("Invalid input: No possible combination.");
+        } else {
+            System.out.println("Number of Chickens: " + chickens);
+            System.out.println("Number of Rabbits: " + rabbits);
+        }
+    }
+}
+
+//another code by chatgpt using loop
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter number of heads: ");
+        int heads = sc.nextInt();
+
+        System.out.print("Enter number of legs: ");
+        int legs = sc.nextInt();
+
+        // Let chickens = c, rabbits = r
+        // c + r = heads → r = heads - c
+        // 2c + 4r = legs
+
+        boolean found = false;
+
+        for (int chickens = 0; chickens <= heads; chickens++) {
+            int rabbits = heads - chickens;
+            int totalLegs = (chickens * 2) + (rabbits * 4);
+
+            if (totalLegs == legs) {
+                System.out.println("Chickens: " + chickens);
+                System.out.println("Rabbits: " + rabbits);
+                found = true;
+                break;
+            }
+        }
+
+        if (!found) {
+            System.out.println("Invalid input: No possible combination of chickens and rabbits.");
+        }
+    }
+}
