@@ -1,0 +1,52 @@
+//using a while loop
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+        int org = num;
+        
+        String str = String.valueOf(num);
+        
+        double sum = 0;
+        while(org > 0){
+            int digit = org % 10;
+            sum += Math.pow(digit, str.length());
+            org /= 10;
+        }
+        
+        int armstrong = (int) sum;
+        if(armstrong == num && num>0)
+            System.out.println("The given number is an armstrong number.");
+        else
+            System.out.println("The given number is not an armstrong number.");
+    }
+}
+
+//using a for-loop
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+        int org = num;
+        String str = String.valueOf(num);
+        
+        double sum = 0;
+        
+        for (int i = 0; i < str.length(); i++){
+            int digit = Character.getNumericValue(str.charAt(i));
+            sum += Math.pow(digit, str.length());
+        }
+        
+        int armstrong = (int) sum;
+        if(armstrong == num)
+            System.out.println("The given number is an Armstrong number.");
+        else
+            System.out.println("The given number is not an Armstrong number.");
+    }
+}
