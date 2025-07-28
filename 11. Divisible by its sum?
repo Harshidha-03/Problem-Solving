@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number: ");
+        int original = sc.nextInt();
+        int num = original; //should do this
+        
+        int sum = 0;
+        
+        while(num > 0){
+            int digit = num % 10;
+            sum += digit;
+            num /= 10;
+        }
+        //while loop for sum of its digits
+
+        if (sum != 0 && original % sum == 0 ){
+            System.out.println("The number " + original + " is divisible by the sum of its digits.");
+        } else{
+            System.out.println("The number " + original + " is not divisible by the sum of its digits.");
+        }
+    }
+}
+
+
