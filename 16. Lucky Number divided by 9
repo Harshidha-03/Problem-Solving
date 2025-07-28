@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a Number: ");
+        int num = sc.nextInt();
+        int sample = num;
+        String str = String.valueOf(num);
+        
+        int toBeChecked = 0;
+        for (int i = 0; i < str.length(); i++){
+            int digit = Character.getNumericValue(str.charAt(i));
+            if (i%2 == 1){
+                toBeChecked += Math.pow(digit,2);
+            }
+        }
+        if (toBeChecked%9 == 0 && toBeChecked > 0)
+            System.out.println("The given number is a Lucky Number.");
+        else 
+            System.out.println("The given number is not a Lucky Number.");
+    }
+}
