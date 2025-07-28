@@ -73,5 +73,31 @@ Assumption: The input will always be a valid date.
 
 <img width="330" height="117" alt="pfwjop156" src="https://github.com/user-attachments/assets/12de0262-d854-4d6c-a198-cbb6d280e263" />
 
-10. 
+10. Implement a program to find out whether a number is a seed of another number.
+A number X is said to be a seed of number Y if multiplying X by its every digit equates to Y.
+E.g.: 123 is a seed of 738 as 123*1*2*3 = 738
 
+<img width="370" height="124" alt="image" src="https://github.com/user-attachments/assets/81254081-7fe1-41ba-b581-b5543aa0294c" />
+
+11. Implement a program to find out whether a number is divisible by the sum of its digits. Display appropriate messages.
+<img width="488" height="124" alt="image" src="https://github.com/user-attachments/assets/8b8901c5-2802-4c90-9e92-f456928d2a23" />
+
+12. Implement a program to find the number of rabbits and chickens in a farm. Given the number of heads and legs of the chickens and rabbits in a farm, identify and display the number of chickens and rabbits in the farm. If the given input cannot make a valid number of rabbits and chickens, then display an appropriate message.
+
+<img width="544" height="146" alt="image" src="https://github.com/user-attachments/assets/d687b8ef-b8f1-48f9-be64-5b471259e35e" />
+
+13. Implement a program to check whether a given number is a palindrome.Palindrome is a sequence that reads the same backwards as forwards. E.g.: 121, 1331, 2332, 78900987, 123456654321,  etc.
+<img width="429" height="133" alt="image" src="https://github.com/user-attachments/assets/319007e9-2cc8-48c9-b576-4ae53009dab5" />
+
+14. Implement a program that displays a message for a given number based on the below conditions.
+If the number is a multiple of 3, display "Zip".
+If the number is a multiple of 5, display "Zap".
+If the number is a multiple of both 3 and 5, display "Zoom",
+For all other cases, display "Invalid".
+
+<img width="413" height="157" alt="image" src="https://github.com/user-attachments/assets/ade897b8-784b-408d-9f1f-c26f33d4366d" />
+
+14. 
+
+
+ 
