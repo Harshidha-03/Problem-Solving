@@ -97,7 +97,11 @@ For all other cases, display "Invalid".
 
 <img width="413" height="157" alt="image" src="https://github.com/user-attachments/assets/ade897b8-784b-408d-9f1f-c26f33d4366d" />
 
-14. 
+15. Implement a program to check whether a given number is an Armstrong number. An Armstrong number is an n-digit number that is equal to the sum of the nth powers of its individual digits.
+E.g.: 371 is an Armstrong number as 33 + 73 + 13=371
+1634 is an Armstrong number as 14 + 64 + 34+ 44=1634
+Hint: Use Math.pow(double a, double b) method to calculate the power of a number
+<img width="452" height="124" alt="image" src="https://github.com/user-attachments/assets/4cc39a91-033e-415c-8dc7-fc145fea5bda" />
 
 
  
