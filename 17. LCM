@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Number 1: ");
+        int num1 = sc.nextInt();
+        System.out.print("Enter Number 2: ");
+        int num2 = sc.nextInt(); 
+        int i = 1;
+        boolean check = true;
+        
+        if (num1 <=0 || num2 <=0 ){
+            System.out.println("Invalid! The input must be greater than 0.");
+            return;
+        }   
+        while(check){
+            if (num2 > num1){
+                if ((i*num2)%num1 == 0){
+                    System.out.println("The LCM of the given numbers is " + i*num2);
+                    check = false;
+                }else
+                    i++;
+            } else {
+               if ((i*num1)%num2 == 0){
+                    System.out.println("The LCM of the given numbers is " + i*num1);
+                    check = false;
+                }else
+                    i++; 
+            }
+        }
+    }
+}
+
+//ALTERNATE - Can use break statement instead of boolean check in while-loop.
+
+//ALTERNATE -using Euclidean algorithm
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Number 1: ");
+        int num1 = sc.nextInt();
+        System.out.print("Enter Number 2: ");
+        int num2 = sc.nextInt(); 
+        
+        if (num1 <=0 || num2 <=0 ){
+            System.out.println("Invalid! The input must be greater than 0.");
+            return;
+        }   
+        int lcm = (num1 * num2) / gcd(num1, num2);
+        System.out.println("The LCM of the given numbers is " + lcm);
+    }
+    public static int gcd(int a, int b){
+        while (b != 0){
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a;
+    }
+}
+
