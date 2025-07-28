@@ -103,5 +103,15 @@ E.g.: 371 is an Armstrong number as 33 + 73 + 13=371
 Hint: Use Math.pow(double a, double b) method to calculate the power of a number
 <img width="452" height="124" alt="image" src="https://github.com/user-attachments/assets/4cc39a91-033e-415c-8dc7-fc145fea5bda" />
 
+16. Implement a program to check whether a given number is a lucky number. A lucky number is a number whose sum of squares of every even-positioned digit (starting from the second position) is a multiple of 9.
+E.g. - 1623 = 62+32 = 45 is a multiple of 9 and hence is a lucky number.
+
+<img width="471" height="124" alt="image" src="https://github.com/user-attachments/assets/d107d295-aa40-48b1-91d9-a8fda9d539b2" />
+
+17. Implement a program to find and display the least common multiple (LCM) of two whole numbers.
+Least Common Multiple (LCM) of two numbers, num1 and num2 is the smallest positive number that is divisible by both num1 and num2.
+<img width="392" height="124" alt="image" src="https://github.com/user-attachments/assets/28f7d19a-b102-4f4c-b39a-f1947ef475f4" />
+
+
 
  
